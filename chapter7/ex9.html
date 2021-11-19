@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .grad {
+            background-image: blue; /* css3 미지원 브라우저 */
+            background-image:-webkit-linear-gradient(left top, blue, white); /* 웹킷 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: -moz-linear-gradient(left bottom, blue, white); /*moz 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: -o-linear-gradient(left bottom, blue, white); /* 오페라 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: linear-gradient(to right bottom, blue, white); /* 최신 브라우저 */
+            /* to right : 왼쪽에서 시작해서 오른쪽으로 그라데이션 */
+            /* to right bottom : 위와 같은 방향으로 그라데이션이 그려지면서 오른쪽하단으로 방향이 지정되도록 */
+        }
+        .grad2 {
+            background-image: #ff0000;
+            background-image: -webkit-linear-gradient(45deg, #ff0000, #ffffff);
+            background-image: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+            background-image: -o-linear-gradient(45deg, #ff0000, #ffffff);
+            background-image: linear-gradient(45deg, #ff0000, #ffffff);
+        }
+        .grad3 {
+            background-image: #06f; /* css3 미지원 브라우저 */
+            background-image:-webkit-linear-gradient(top, #06f, white 30%, #06f); /* 웹킷 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: -moz-linear-gradient( bottom, #06f, white 30%, #06f); /*moz 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: -o-linear-gradient( bottom, #06f, white 30%, #06f); /* 오페라 방식의 브라우저를 사용하는데 초기 버전 브라우저일 경우 */
+            background-image: linear-gradient(to bottom, #06f, white 30%, #06f); /* 최신 브라우저 */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 방향으로 선형 그라데이션 -->
+    <div class="grad"></div>
+    <!-- 각도로 선형 그라데이션 -->
+    <div class="grad2"></div>
+    <!-- 방향으로 그라데이션을 지정 / 색상 중지점(color stop)을 적용한 그라데이션 -->
+    <div class="grad3"></div>
+</body>
+</html>

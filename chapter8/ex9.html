@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+        .box1 {
+            box-shadow: 2px -2px 5px 0px black;
+            /* 2px -> 수평거리 / 수평으로 얼마만큼 떨어져 있는지 / 양수는 요소의 오른쪽, 음수는 요소의 왼쪽에 그림자를 만듦 */
+            /* -2px -> 수직거리 / 수직으로 얼마나 떨어져 있는지 / 양수는 요소의 아래쪽, 음수는 요소의 위쪽에 그림자를 만듦*/
+            /* 5px -> 흐림정도 / 0px부터 지정 가능 / 0px는 진한 그림자, 값이 커질수록 부드러워지면서 흐려지는 그림자가 만들어짐 */
+            /* 0px -> 번짐정도 */
+        }
+        .box2 {
+            box-shadow: 5px 5px 15px 5px gray;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

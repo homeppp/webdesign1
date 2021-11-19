@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert page title</title>
+</head>
+<body>
+    <!-- preload : 파일을 미리 다운로드 하지 않고 재생을 시작할 때 다운로드를 시작하도록 / 중요한 데이터 몇개만 다운로드를 받거나 / 미리 파일의 전체를 다운 받는 등 핸들링을 할 수 있음 -->
+    <!-- preload="none" -> 파일을 미리 다운로드 하지 않고 재생을 시작할 때 다운로드를 시작하도록 -->
+    <!-- preload="metadata" -> 중요한 데이터 몇 개만 다운로드를 받거나 -->
+    <!-- preload="auto" -> 미리 파일의 전체를 다운 받는 등 핸들링을 할 수 있음 -->
+    <video autoplay controls width="400" height="200" preload="none" muted>
+        <source src="media/Painting.mp4" type="video/mp4">
+        <source src="media/Painting.webm" type="video/webm">
+        이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다.
+    </video>
+</body>
+</html>
